@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookings</title>
+  <link rel="stylesheet" href="./Hotel.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!--Header-->
+    <section class="header">
+      <img src="./logo.png" alt="logo">
+      <section class="header-data">
+        <a href="./Home.html">HOME</a>
+        <a href="./Hotels.html">HOTELS</a>
+        <a href="./Rest.html">RESTAURANTS</a>
+        <a href="./Adven.html">ADVENTURES</a>
+        <a class="active" href="./Book.html">BOOKINGS</a>
+        <a href="./Contact.html">CONTACT US</a>
+      </section>
+    </section>
+    <section class="introland">
+        <img src="./landscape5.webp" alt="Kandy poolside">
+        <h1>Bookings</h1>      
+    </section>
+    <!--form-->
+              <h1 id="bookheading">Enjoy your stay with us</h1>
+          <form class="formdata">
+                  <section class>
+                      <label for="fname">Full Name</label>
+                      <input type="text" id="fname" name="name" placeholder="Your Name" required>
+                  </section>
+                  <section class>
+                      <label for="email">E-mail</label>
+                      <input type="email" id="email" name="email" placeholder="Your E-mail" required>
+                  </section>
+                  <section>
+                      <label for="adr">Address</label>
+                      <textarea id="adr" name="address" placeholder="Your Address" cols="30" rows="10" required></textarea>
+                  </section>
+                  <section>
+                      <label for="count">Country</label>
+                      <input type="text" id="count" name="count" placeholder="Your Country" required>
+                  </section>
+                  <section>
+                      <label for="cont">Contact Number</label>
+                      <input type="text" id="cont" name="cont" placeholder="Your Contact Number" required>
+                  </section>
+                  <section>
+                      <label for="indate">Check-In Date</label>
+                      <input type="date" name="indate" id="indate" required>
+                  </section>
+                  <section>
+                      <label for="oudate">Check-Out Date</label>
+                      <input type="date" name="oudate" id="oudate" required>
+                  </section>
+                  <section>
+                      <label>Choose Hotel</label>
+                      <select name="hotelsel" required>
+                          <option value="jc">Jetwing Colmbo Seven</option>
+                          <option value="jk">Jetwing Kandy Gallery</option>
+                          <option value="jf">Jetwing Jaffna</option>
+                      </select>
+                  </section>
+                  <section>
+                      <label>Select Adventure</label>
+                      <input type="checkbox" name="advsel" id="adv1">Whale Watching
+                      <input type="checkbox" name="advsel" id="adv2">Culinary Canvas
+                      <input type="checkbox" name="advsel" id="adv3">Target Practice
+                  </section>
+                  <section>
+                      <label for="msg">Enter Message</label>
+                      <textarea id="adr" name="message"   placeholder="Enter a messsage" cols="30" rows="10" required></textarea> 
+                 </section>
+                 <!--Button-->
+                 <input type="submit" value="Book Now" class="btn">
+          </form>
+  <!--Footer-->
+  <footer class="footer">
+    <section class="footer-left">
+      <section class="footer-logo">
+        <img src="./logo.png" alt="footer logo">
+      </section>
+      <section class="footer-left-text">
+        <p>JETWING HOUSE II,</p>
+        <p>46/26, NAVAM MAWATHA,</p>
+        <p>COLOMBO 02, 00200,</p>
+        <p>SRI LANKA</p>
+      </section>
+    </section>
+    <section class="footer-icons-container">
+      <section class="footer-icons">
+        <a href="https://www.facebook.com/jetwinghotels/"><img class="icon" src="./icons8-facebook-48.png" alt="facebook icon"></a>
+        <a href="https://www.instagram.com/jetwinghotels/?ref=badge"><img class="icon" src="./icons8-instagram-48.png" alt="instagram icon"></a>
+        <a href="https://twitter.com/JetwingHotels"><img class="icon" src="./icons8-twitter-48.png" alt="twitter icon"></a>
+        <a href="https://www.youtube.com/user/jetwinghotels"><img class="icon" src="./icons8-youtube-48.png" alt="youtube icon"></a>
+        <a href="https://www.linkedin.com/company/jetwinghotels/"><img class="icon" src="./icons8-linkedin-48.png" alt="linkedin icon"></a>
+      </section>
+    </section>
+    <section class="footer-contacts">
+        <p><a id="email-link" href="mailto:RESERVATIONS@JETWINGHOTELS.COM">RESERVATIONS@JETWINGHOTELS.COM</a></p>
+        <br>
+        <p>TELEPHONE : +94 11 234 5700</p>
+    </section>
+  </footer>
+  </body>
+</html>

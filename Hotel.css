@@ -1,0 +1,949 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Header*/
+.header{
+    overflow:hidden;
+    background-color:white;
+    padding: 20px 10px;
+    position: fixed;
+    z-index: 3;
+    width: 99%;
+}
+.header a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+.header a:hover{
+    background-color: rgba(231,24,143);
+    color: black;
+}
+.header img{
+    width: 10%;
+}
+.header a.active{
+    background-color: rgba(231,24,143);
+    color: white;
+}
+.header-data{
+    float: right;
+}
+/*header media queries*/
+@media screen and (max-width: 750px) {
+    .header{
+        position: sticky;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .header img{
+        width:40%;
+    }
+    .header a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-data{
+        float: none;
+    }
+}
+
+
+
+
+
+
+
+
+body {
+    background:white;
+    margin: 0;
+    padding: 0;
+}
+/*Home page*/
+.introland {
+    position: relative;
+    width: 100%;
+}
+.introland img {
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+}
+.introland h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    text-align: center;
+    width:100%;
+    top:50%;
+    color: white;
+    font-size: clamp(30px,8vw,400px);
+}
+ /*Home page inroduction*/
+.intro{
+    text-align: center;
+    width: 100%;  
+}
+.intro p{
+    text-align: center;
+    font-size: clamp(10px,1.6vw,200px);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.intro img{
+    width: 70%;
+}
+.intro-break-img{
+    background-color: #dcdcd81d;
+}
+/*Home page ,why choose us*/
+.whycontent{
+    background-color: #dcdcd81d;
+    margin-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: clamp(10px,1.6vw,200px);
+}
+.whycontent h2{
+    margin-top: 5%;
+    font-size: clamp(10px,2.5vw,200px);
+    color:rgba(231,24,143);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.whycontent p{
+    margin-top: 2%;
+    text-align: justify;
+    align-content: center;
+}
+/*Unordered list*/
+.whycontent .list1{
+    padding-right: 5%;
+    padding-left: 5%;
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 180%;
+    text-align: justify;
+    font-size: clamp(10px,1.6vw,200px);
+}
+.if-para{
+    display: flex;
+    justify-content: center;
+    font-size: clamp(10px,1.6vw,200px);
+}
+/*Home page about us*/
+.aboutus{
+    background-color: #dcdcd81d;
+    margin-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+    font-size: clamp(10px,1.6vw,200px);
+    text-align: center;
+}
+.aboutus h2{
+    margin-top: 5%;
+    font-size: clamp(10px,2.5vw,200px);
+    color:rgba(231,24,143);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.aboutus p{
+        margin-top: 2%;
+        text-align: justify;
+        line-height: 150%;
+}
+#call{
+    font-size: clamp(10px,2.5vw,200px);
+    color: rgba(231,24,143);
+}
+/*Ordered list*/
+ .aboutus .list2{
+    padding-right: 5%;
+    padding-left: 5%;
+    display: inline-block;
+    margin-top: 2%;
+    line-height: 30px;
+    text-align: justify;
+    font-size: clamp(10px,1.6vw,200px);
+}
+/*Home page album*/
+.home-gallery{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.home-gallery-image{
+    width: 25%;
+    height: 50vh;
+}
+.home-gallery-image img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 3%;
+}
+/*media queries for home page album*/
+@media (max-width:900px){
+    .home-gallery{
+        flex-direction: column;
+    }
+    .home-gallery-image{
+        width: 50%;
+        padding-top: 5%;
+        height: auto;
+    }
+    .home-gallery-image img{
+        height: auto;
+    }
+}
+@media (max-width:400px){
+    .home-gallery-image{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+/*Branches page*/
+/*jetwing colombo seven*/
+.hotel1{
+    background-color: #e0d9cfaf;
+    margin-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.hotel1 h2{
+    margin-bottom: 3%;
+    padding-top: 3%;
+    font-size: clamp(10px,2.5vw,200px);
+    color:rgba(231,24,143);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hotel1 img{
+    width: 50%;
+}
+.hotel1 p{
+    color: #223240;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: clamp(10px,1.6vw,200px);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/*hotel gallerys*/
+.hotel-gallery{
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.hotel-gallery-image{
+    width: 25%;
+    height: 50vh;
+}
+.hotel-gallery-image img{
+    width: 100%;
+    height: 50vh;
+}
+/*media queries for hotel gallery*/
+@media (max-width:900px){
+    .hotel-gallery{
+        flex-direction: column;
+    }
+    .hotel-gallery-image{
+        width: 50%;
+        padding-top: 5%;
+        height: auto;
+    }
+    .hotel-gallery-image img{
+        height: auto;
+    }
+}
+@media (max-width:400px){
+    .hotel-gallery-image{
+        width: 80%;
+    }
+}
+/*hotel iframe and map*/
+.hotel-map-container{
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    border-bottom: black solid 2px;
+    padding-bottom: 2%;
+    background-color: white;
+}
+
+.hotel-map{
+    width: 30%;
+    height: 50vh;
+}
+.hotel-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.hotel-map-image{
+    width: 50%;
+    height: 50vh;
+}
+.hotel-map-image img{
+    width: 100%;
+    height: 50vh;
+}
+/*media queries for iframe and map*/
+@media (max-width:800px){
+    .hotel-map-container{
+        flex-direction: column;
+    }
+    .hotel-map{
+        width: 80%;
+        height: auto;
+    }
+
+    .hotel-map-image{
+        width: 80%;
+        height: auto;
+    }
+    .hotel-map-image img{
+        height: auto;
+    }
+}
+/*jetwing kandy gallery*/
+.hotel2{
+    background-color: #e0d9cfaf;
+    margin-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.hotel2 h2{
+    padding-top: 3%;
+    margin-bottom: 3%;
+    font-size: clamp(10px,2.5vw,200px);
+    color:rgba(231,24,143);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hotel2 img{
+    width: 50%;
+}
+.hotel2 p{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: clamp(10px,1.6vw,200px);
+    text-align: justify;
+}
+.hotel2alb{
+    width: 100%;
+}
+.hotel2alb img{
+    width:50%;
+}
+/*jetwing jaffna*/
+.hotel3{
+    background-color: #e0d9cfaf;
+    margin-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.hotel3 h2{
+    padding-top: 3%;
+    margin-bottom: 3%;
+    font-size: clamp(10px,2.5vw,200px);
+    font-weight: 600;
+    color:rgba(231,24,143);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hotel3 img{
+    width: 50%;
+}
+.hotel3 p{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: clamp(10px,1.6vw,200px);
+    text-align: justify;
+}
+.hotel3alb{
+    width: 100%;
+}
+.hotel3alb img{
+    width:50%;
+}
+/*branches page table*/
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    padding-top: 5%;
+
+  }
+  
+  table caption {
+    font-size: clamp(10px,2vw,100px);
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: aliceblue;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+    border: 1px solid rgba(231,24,143);
+    font-size: clamp(10px,1.6vw,100px);
+  }
+  table td{
+    font-size: clamp(10px,1.6vw,100px);
+  }
+  table td img{
+    width: 50%;
+    height: auto;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /*media queries for hotel table*/
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+
+
+
+
+/*restaurant page*/
+.restaurant-name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding-top: 3%;
+}
+.restaurant-name h1{
+    font-size: clamp(10px,2.5vw,200px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgba(231,24,143);
+}
+.restaurant-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    gap:3%;
+    padding-top: 3%;
+}
+.restimage{
+    width:40%;
+}
+.restimage img{
+    width:100%;
+}
+.restdisc{
+    width:50%;
+    text-align: left;
+    font-size: clamp(10px,1.6vw,200px);
+    padding-top: 5%;
+}
+.restdisc a{
+    color:rgba(231,24,143);
+    text-decoration: none;
+}
+/*media queries restaurant image and description*/
+@media (max-width:800px){
+    .restaurant-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .restimage{
+        width:60%;
+    }
+    .restdisc{
+        width: 60%;
+        text-align: justify;
+    }
+}
+/*Event selection*/
+.restevent-conatiner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+}
+.rest-event-wrapper{
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+.event-image{
+    width:50%;
+    position: relative;
+    height: 60vh;
+}
+.event-image img{
+    width:100%;
+    display:block;
+    margin: auto;
+    height: 60vh;
+}
+.event-text{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(250, 235, 215, 0.574);
+    display: flex;
+    font-size: (10px,2.5vw,200px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.event-text h1{
+    font-size: clamp(10px,5vw,200px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.event-text .event-button{
+    color:rgba(231,24,143);
+    background: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.event-button:hover{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.event-text:hover{
+    opacity:1;
+    cursor: pointer;
+}
+.event-text>*{
+    transform: translateY(25px);
+}
+.event-text:hover>*{
+    transform: translateY(0px);
+}
+/*media queries for events*/
+@media(max-width:860px){
+    .event-image{
+        height:auto;
+    }
+    .rest-event-wrapper{
+        height:auto;
+    }
+    .event-image img{
+        height: auto;
+    }
+}
+
+
+
+
+
+
+/*Adventure page*/
+.adventure-name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    width:100%;
+    
+    padding-top: 3%;
+}
+.adventure-name h1{
+    color:rgba(231,24,143);
+    font-size: clamp(10px,2.5vw,200px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.adventure-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    gap:3%;
+}
+.adventuretext{
+    width:50%;
+    text-align: left;
+    font-size: clamp(10px,1.6vw,200px);
+}
+.adventureimage{
+    width:40%;
+    height: 80vh;
+}
+.adventureimage img{
+    width:100%;
+    height: 80vh;
+}
+/*adventure iframe and image*/
+.adventure-map-image{
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    border-bottom: black solid 2px;
+    padding-bottom: 2%;
+    background-color: white;
+}
+/*iframe*/
+.adventure-map{
+    width: 30%;
+    height: 50vh;
+}
+.adventure-map iframe{
+    width: 100%;
+    height: 100%;
+}
+/*image2*/
+.adventureimage2{
+    width: 50%;
+    height: 50vh;
+}
+.adventureimage2 img{
+    width: 100%;
+    height: 50vh;
+}
+/*media queries for each adventure image,iframe and paragraph*/
+@media (max-width:800px){
+    .adventure-container{
+        flex-direction: column;
+    }
+    .adventureimage{
+        height: auto;
+        padding-top: 3%;
+        width: 80%;
+    }
+    .adventureimage img{
+        height: auto;
+    }
+    .adventure-map-image{
+        flex-direction: column;
+    }
+    .adventure-map{
+        width: 80%;
+        height: auto;
+    }
+
+    .adventureimage2{
+        width: 80%;
+        height: auto;
+    }
+    .adventureimage2 img{
+        height: auto;
+    }
+    .adventuretext{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*Booking page and contact us page*/
+/*form*/
+ #bookheading{
+    font-size: clamp(10px,2.5vw,200px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(231,24,143);
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+} 
+.formdata{
+    background-color:#e0d9cfaf;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid rgba(231,24,143);
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+input[type=text]{
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid rgba(231,24,143);
+    border-radius: 3px;
+}
+input[type=email]{
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid rgba(231,24,143);
+    border-radius: 3px;
+}
+input[type=date]{
+    width: 15%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid rgba(231,24,143);
+    border-radius: 3px;
+}
+textarea{
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid rgba(231,24,143);
+    border-radius: 3px;
+}
+label{
+    margin-bottom: 10px;
+    display: block;
+    font-size: clamp(25px,1.0vw,100px);
+}
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+.btn {
+    background-color: rgba(231,24,143);
+    color: black;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 25%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.btn:hover {
+    background-color: rgba(231, 24, 141, 0.673);
+    color: white;
+}
+@media (max-width:700px){
+    label{
+        font-size: clamp(20px,1.0vw,100px);;
+    }
+}
+
+
+
+
+/*Footer*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    padding-top: 3%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+.footer-left{
+    width:40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:5%;
+}
+.footer-logo{
+    float:left;
+    width: 30%;
+
+}
+.footer-logo img{
+    width: 100%;
+    float:left;
+}
+.footer-left-text{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media (max-width:800px){
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-logo{
+        width:80%;
+    }
+    .footer-left-text{
+        padding-top: 10%;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+}
+.footer-icons-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-icons{
+    width:100%;
+    height:auto;
+}
+.footer-icons img{
+    width: 17%;
+    height:auto;
+}
+@media (max-width:800px){
+    .footer-icons-container{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .footer-icons{
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+       
+    }
+}
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:30%;
+    padding-left: 5%;
+}
+.footer-contacts #email-link{
+    text-decoration: none;
+    color: rgba(231,24,143);
+}
+@media (max-width:800px){
+    .footer-contacts{
+        width:100%;
+        padding-left: 0;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+    }
+}
+
+
+
