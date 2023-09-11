@@ -10,7 +10,6 @@
     padding: 20px 10px;
     position: fixed;
     z-index: 3;
-    width: 99%;
 }
 .header a{
     float: left;
